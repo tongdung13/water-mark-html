@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+    <style>
+        html {
+            height: 100%;
+        }
+
+        body {
+            position: relative;
+            height: 100%;
+        }
+
+        body:before {
+            content: 'tong dung';
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: -1;
+
+            color: #0d745e;
+            font-size: 100px;
+            font-weight: 500px;
+            display: grid;
+            justify-content: center;
+            align-content: center;
+            opacity: 0.2;
+            transform: rotate(-45deg);
+        }
+
+        /* body:before {
+            content: ' ';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: url('img/water max.jpeg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            z-index: -1;
+            opacity: 0.2;
+        } */
+
+        .watermark {
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            user-select: none;
+            /* Non-prefixed version for chorme, opera and*/
+            -ms-user-select: none;
+            /* Internet Explorer, Edge */
+            -moz-user-select: none;
+            /* Firefox */
+            -khtml-user-select: none;
+            /* Konqueror HTML */
+            -webkit-touch-callout: none;
+            /* iOS Safari */
+            -webkit-user-select: none;
+            /* Safari */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="watermark">Watermark text</div>
+    <p>Tạo blog tuyệt đẹp phù hợp với phong cách của bạn. Chọn trong một tuyển tập gồm các mẫu dễ sử dụng – tất cả đều
+        có bố cục linh hoạt và hàng trăm hình nền – hoặc thiết kế điều gì đó mới lạ.
+    </p>
+</body>
+
+</html>
